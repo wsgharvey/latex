@@ -1,0 +1,169 @@
+% MISC.
+\newcommand{\indicator}[1]{\mathbbm{1} \left( #1 \right)}
+
+% EQUATIONS
+\newcommand{\beq}[1]{\begin{equation} \eqlab{#1}}
+\newcommand{\eeq}{\end{equation}}
+\newcommand{\bal}[1]{\begin{align}#1}
+\newcommand{\eal}[1]{\end{align}}
+\newcommand{\bsubal}[2]{\bsub \eqlab{#1}\bal#2\eal}
+\newcommand{\esubal}{\esub}
+% begin/end align with a,b,c-equation labels
+\newcommand{\bsub}{\begin{subequations}}
+\newcommand{\esub}{\end{subequations}}
+\newcommand{\nn}{\nonumber}
+\newcommand{\bsubalat}[3]{\bsub\eqlab{#1}\begin{alignat}{#2}#3\end{alignat}}
+\newcommand{\esubalat}{\esub}
+%
+
+% MATH SYMBOLS
+\newcommand{\grad}{\boldsymbol{\nabla}}
+\newcommand{\divop}{\grad\scap}
+\renewcommand{\vec}[1]{\bm{#1}}
+\newcommand{\trans}[1]{#1^\mr{T}}
+\newcommand{\dm}{\mathrm{d}}
+\newcommand{\mN}{\mathcal{N}}
+\newcommand{\mL}{\mathcal{L}}
+\newcommand{\mO}{\mathcal{O}}
+\newcommand{\mI}{\mathcal{I}}
+\newcommand{\mE}{\mathcal{E}}
+\newcommand{\mA}{\mathcal{A}}
+\newcommand{\mG}{\mathcal{G}}
+\newcommand{\mD}{\mathcal{D}}
+\newcommand{\mU}{\mathcal{U}}
+\newcommand{\mT}{\mathcal{T}}
+\newcommand{\mF}{\mathcal{F}}
+\newcommand{\complex}{\mathbb{C}}
+\newcommand{\real}{\mathbb{R}}
+% MATH STYLE
+\newcommand{\scap}{\!\cdot\!}
+\newcommand{\intd}[1]{{\int\!\dm#1\: }}
+% MATH NOTATION
+\newcommand{\ave}[1]{\left\langle #1 \right\rangle}
+\newcommand{\br}[1]{\left\lbrack #1 \right\rbrack}
+\newcommand{\paren}[1]{\left(#1\right)}
+\newcommand{\tub}[1]{\left\{#1\right\}}
+\newcommand{\mr}[1]{\mathrm{#1}}
+\newcommand{\vt}[1]{\left.#1\right\vert}
+\newcommand{\abs}[1]{\left\lvert#1\right\rvert}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+% VECTORS, MATRICES
+\newcommand{\sigv}{\vec{\sigma}}
+\newcommand{\sigvt}{\trans{\sigv}}
+\newcommand{\yyy}{\vec{y}}
+\newcommand{\yyyt}{\trans{\yyy}}
+\newcommand{\AAA}{\vec{A}}
+\newcommand{\AAAt}{\trans{\AAA}}
+\newcommand{\III}{\vec{I}}
+\newcommand{\IIIt}{\trans{\III}}
+\newcommand{\eee}{\vec{e}}
+\newcommand{\eeet}{\trans{\eee}}
+\newcommand{\ooo}{\vec{0}}
+\newcommand{\oootl}{\trans{\vec{0}}}
+\newcommand{\xxx}{\vec{x}}
+\newcommand{\xxxt}{\trans{\xxx}}
+\newcommand{\ththth}{\vec{\theta}}
+\newcommand{\XXX}{\vec{X}}
+\newcommand{\XXXt}{\trans{\XXX}}
+\newcommand{\JJJ}{\vec{J}}
+\newcommand{\JJJt}{\trans{\JJJ}}
+\newcommand{\www}{\vec{w}}
+\newcommand{\wwwt}{\trans{\www}}
+\renewcommand{\ggg}{\vec{g}}
+\newcommand{\gggt}{\trans{\ggg}}
+\newcommand{\bbb}{\vec{b}}
+\newcommand{\bbbt}{\trans{\bbb}}
+\newcommand{\ttt}{\vec{t}}
+\newcommand{\tttt}{\trans{\ttt}}
+\newcommand{\TTT}{\vec{T}}
+\newcommand{\TTTt}{\trans{\TTT}}
+\newcommand{\WWW}{\vec{W}}
+\newcommand{\WWWt}{\trans{\WWW}}
+\newcommand{\ZZZ}{\vec{Z}}
+\newcommand{\ZZZt}{\trans{\ZZZ}}
+\newcommand{\HHH}{\vec{H}}
+\newcommand{\HHHt}{\trans{\HHH}}
+\newcommand{\ppi}{\vec{\pi}}
+\newcommand{\ppit}{\trans{\ppi}}
+\newcommand{\lamm}{\vec{\lambda}}
+\newcommand{\lammt}{\trans{\lamm}}
+\newcommand{\ccc}{\vec{c}}
+\newcommand{\ccct}{\trans{\ccc}}
+\newcommand{\ppp}{\vec{p}}
+\newcommand{\pppt}{\trans{\ppp}}
+\newcommand{\uuu}{\vec{u}}
+\newcommand{\uuut}{\trans{\uuu}}
+\newcommand{\muu}{\vec{\mu}}
+\newcommand{\muut}{\trans{\muu}}
+\newcommand{\CCC}{\vec{C}}
+\newcommand{\CCCt}{\trans{\CCC}}
+\newcommand{\zzz}{\vec{z}}
+\newcommand{\zzzt}{\trans{\zzz}}
+\newcommand{\SSS}{\vec{S}}
+\newcommand{\SSSt}{\trans{\SSS}}
+\newcommand{\LLL}{\vec{L}}
+\newcommand{\LLLt}{\trans{\LLL}}
+\renewcommand{\lll}{\vec{l}}
+\newcommand{\lllt}{\trans{\lll}}
+\newcommand{\rrrt}{\trans{\rrr}}
+\newcommand{\RRRt}{\trans{\RRR}}
+\newcommand{\SiSiSi}{\vec{\Sigma}}
+\newcommand{\SiSiSit}{\trans{\Sigma}}
+\newcommand{\hhh}{\vec{h}}
+\newcommand{\hhht}{\trans{\hhh}}
+\newcommand{\one}{\vec{1}}
+\newcommand{\onet}{\trans{\one}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% New Math operators
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\argmax{\mathop{\rm arg\,max}}
+\def\argmin{\mathop{\rm arg\,min}}
+\newcommand{\trace}[1]{\mr{Tr}\paren{#1}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Stat and Machine Learning notation
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\DeclareMathOperator*{\EX}{\mathbb{E}}
+\newcommand{\mean}[1]{\mathbb{E}\br{#1}}
+\newcommand{\meanq}[1]{\mathbb{E}_{q}\br{#1}}
+\newcommand{\meannni}[1]{\mathbb{E}_{-i}\br{#1}}
+\newcommand{\meanp}[2]{\mathbb{E}_{#1}\br{#2}}
+\newcommand{\kl}[2]{\mr{KL}\paren{\vt{\vt{#1}}#2}}
+\newcommand{\loss}{\mL}
+\newcommand{\lossq}{\loss_\mr{sq}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Information Theory
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\entropy}{\mathcal{H}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Distributions
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\normdist}[2]{\mN\paren{#1,#2}}
+\newcommand{\gammdist}[2]{\mG\paren{#1,#2}}
+\newcommand{\betadist}[2]{\mr{Beta}\paren{#1,#2}}
+\newcommand{\betapros}[2]{\mr{BP}\paren{#1,#2}}
+\newcommand{\bernoudist}[1]{\mr{Bernoulli}\paren{#1}}
+\newcommand{\bernoupros}[1]{\mr{BeP}\paren{#1}}
+\newcommand{\poisson}[1]{\mr{Poisson}\paren{#1}}
+\newcommand{\expondist}[1]{\mE\paren{#1}}
+\newcommand{\truncdist}[4]{\mT\mN\paren{#1,#2,#3,#4}}
+\newcommand{\unidist}[2]{\mU\paren{#1,#2}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Prior notation
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\IBP}{\mathcal{IBP}}
+\newcommand{\BeP}{\mathcal{BeP}}
+\newcommand{\bp}{\mathcal{bp}}
+\newcommand{\npbNMFinf}{\mr{npbNMF}^i_\infty}
+\newcommand{\npbNMFfinite}{\mr{npbNMF}^i_\approx}
+\newcommand{\npbNMFinfshared}{\mr{npbNMF}^\text{shared}_\infty}
+\newcommand{\npbNMFfiniteshared}{\mr{npbNMF}^\text{shared}_\approx}
+\newcommand{\npbNMFinfsparse}{\mr{npbNMF}^\text{sparse}_\infty}
+\newcommand{\npbNMFfinitesparse}{\mr{npbNMF}^\text{sparse}_\approx}
+\newcommand{\npbNMFfinitess}{\mr{npbNMF}^\text{ss}_\approx}
+\newcommand{\npbNMFinfss}{\mr{npbNMF}^\text{ss}_\infty}
+\newenvironment{rcases}{\left.\begin{aligned}}{\end{aligned}\right\rbrace}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% underbrace inside matrices
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\block}[1]{\underbrace{\begin{matrix}1 & \cdots & 1\end{matrix}}_{#1}}
+\newcommand{\blockt}[1]{\begin{rcases} \begin{matrix} ~\\ ~\\ ~ \end{matrix} \end{rcases}{#1}}
